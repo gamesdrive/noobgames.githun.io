@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="dark.css">
+  <title>Google Drive - encrypted folder copy</title>
+</head>
+<body>
+  <script type="text/javascript">
+    if(localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  </script>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./">Decrypt links</a>
+          </li>
+          <li id="builder" class="nav-item">
+            <a class="nav-link" href="build.html">How to encrypt links</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="build.html">How to Create Shared Drive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="#instructions_modal">Instructions</a>
+          </li>   
+          <li class="nav-item">
+            <a id="dark_toggle" class="nav-link" data-toggle="modal" href="#"><span class="dark_switch">Dark</span><span class="light_switch">Light</span> mode</a>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container"><div class="row"><div class="col">
+    <div class="card my-4">
+        <div class="card-body">
+            <p>Create a new Shared Drive with unlimited Cloud storage space for your personal use. </p>
+            <hr>
+            <h3>Visit one of these links</h3>
+            
+
+            <ol>
+                <li><a href="https://td.fastio.me/" target="_blank">Free Shared Drive</a></li>
+                <li><a href="https://gd.404edu.workers.dev/" target="_blank">Taiwan National Chung Cheng</a></li>
+                <li><a href="https://gd.zxd.workers.dev/" target="_blank">Workers</a></li>
+                <li><a href="https://team.gdrive.vip/" target="_blank">Bo Nho Dung Chung</a></li>
+                <li><a href="https://gdrive.zppcw.cn/" target="_blank">University of Sheffield, UK</a></li>
+                <li><a href="https://gd.404edu.workers.dev/" target="_blank">404 NOT FOUND</a></li>
+                <li><a href="https://gd.zxd.workers.dev/" target="_blank">yyuueexxiinngg</a></li>
+                <li><a href="http://leon.educationhost.cloud/" target="_blank">leon educationhost</a></li>
+                <li><a href="https://teamdrive.xcpx.workers.dev/" target="_blank">swccd.edu team disk</a></li>
+                <li><a href="https://ucla.ur.workers.dev/" target="_blank">Los Angeles California University team disk</a></li>
+
+            </ol>
+
+            <h3>Fill out the form</h3>
+            <p>(Use your gmail address and click Get or Submit)</p>
+            <h3>Finally visit this <a href="https://drive.google.com/drive/shared-drives">link</a> to Access Your Team Drive</h3>
+              <hr>
+            
+            <div class="alert alert-warning">
+              <p>Modified by <b>MasterBr1an</b> | <a href="https://github.com/MasterBrian99/GDrive-efc">Github</a> (source code)</p>
+              <div class="text-muted">If you paid for this script you were scammed!</div>
+
+            </div>
+            
+
+        </div>
+  </div>
+  <div class="modal fade" id="instructions_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Instructions</h5>
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-primary">If you get "Rate Limit Exceeded" error wait a minute and try again.</div>
+          <h5>1. Log in.</h5>
+          <p>Click on the <b>Select account</b> button. If you logged in before you can select your account from the list. If you want to add a new account click on the <b>Get auth</b> button, follow the steps on screen, copy authorization code, paste it to the input field and press <b>Continue</b>.</p>
+          <p>After logging in you will see your name, email and free space on your drive listed in the first box. Click on the <b>Switch</b> button to switch to another account.</p>
+          <h5>2. Select destination folder and manage your files.</h5>
+          <p>The second box lets you manage files on your drive. Click on the <b>Select</b> button to choose the destination folder for copied files. Click on the <b>Reload</b> button to load list of your files in this folder again.</p>
+          <div class="alert alert-warning">Only files copied using this tool are displayed there!</div>
+          <p>Select some files and press <b>Share</b> to copy their public links - this is useful if you're using <b>JDownloader</b> for downloading files. Click on the <b>Delete</b> or <b>Trash</b> buttons to remove files completely or move them to the trash.</p>
+          <h5>3. Copy files</h5>
+          <p>Paste encrypted folder ID or a normal folder link to the input field in the third box and press <b>Load</b>.
+          <div class="alert alert-danger">If you use encrypted folder ID then your access token is sent to the decryption server. Lifespan of that token is one hour. That means for one hour that server has access to your whole Google Drive! That's why you should always use a dummy account. The default decryption server code doesn't store anything but all it takes is one malicious person with a modified decryption server to wipe out your Google Drive or worse, steal your data. If you're using encrypted folder IDs with your main account - make sure you trust the person that shared it.</div>
+          <p>Click on the <b>.MD5</b> button to download MD5 hashsums for all listed files. Select some files and press <b>Copy</b> to copy them to your drive.</p>
+          <hr>
+          <h5>Best practices</h5>
+          <p>If you're just downloading files - use a dummy acc. Copy files to your drive, download them and then delete from your drive.</p>
+          <div class="alert alert-primary">Tip: if your destination folder is already made public all files copied to it are public too, that saves you some time.</div>
+          <p>If you want to store files on your main account - open two tabs. In the first tab log into your dummy account and use encrypted folder ID to copy files to dummy account. In second tab log into your main account and use folder link from the dummy account to copy files from dummy account to your main one.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.4.0/dist/jszip.min.js" integrity="sha256-Uktz9Z+RdiKZoEPBkqU9DGKjNVUe9eVSlKB3EMd4uto=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#dark_toggle").click(event => {
+      event.preventDefault();
+      if($(document.body).toggleClass("dark").hasClass("dark")) {
+        localStorage.setItem("theme", "dark");
+      }
+      else {
+        localStorage.removeItem("theme");
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    try {
+      if(!String.prototype.hasOwnProperty("matchAll")) {
+        throw Error("unsupported");
+      }
+    }
+    catch(e) {
+      $("#browser_sucks").show();
+      throw e;
+    }
+    $("#browser_ok").show();
+  </script>
+  <script src="common.js"></script>
+  <script src="build.js"></script>
+</body>
+</html>
